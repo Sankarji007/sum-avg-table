@@ -18,12 +18,15 @@
         <tbody>
           <tr *ngFor="let d of index;let i=index">
             <td>{{i+1}}</td>
+            <!-- getting the table index values from the map -->
             <td *ngFor="let val of tableData.get(i+1)">
               {{val}}
             </td>
+             <!-- getting the sum from sum array -->
             <td>
               {{sum[i]}}
             </td>
+            <!-- getting the average from average array -->
             <td>
               {{average[i]}}
             </td>
